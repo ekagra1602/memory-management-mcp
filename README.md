@@ -115,16 +115,6 @@ for item in memory_store.get("bob"):
 
 ---
 
-## 🧩 Extending / Replacing the Backend
-
-`MemoryStore` is deliberately simple. To use Redis, Postgres, or any other storage:
-
-1. Create a subclass (or new implementation) that exposes the same `add()` and `get()` methods.
-2. Replace the global `memory_store` in `app/memory.py` with your implementation.
-3. (Optional) add dependency injection if you need per-request stores.
-
----
-
 ## ⚙️ Environment Variables
 
 Variable | Default | Description
