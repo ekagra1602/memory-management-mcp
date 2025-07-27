@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 
 from .config import get_settings
-from .routers import health, memory
+from .routers import health, memory, version
 
 from dotenv import load_dotenv
 import time
